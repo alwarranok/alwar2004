@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main() {
+  int maths,science,english,social,total;
+  float fee;
+
+  printf("Enter 1 for maths and 0 for not selecting maths: ");
+  scanf("%d", &maths);
+  printf("Enter 1 for science and 0 for not selecting science: ");
+  scanf("%d", &science);
+  printf("Enter 1 for English and 0 for not selecting English: ");
+  scanf("%d", &english);
+  printf("Enter 1 for Social and 0 for not selecting Social: ");
+  scanf("%d", &social);
+
+  total=maths+science+english+social;
+  fee=total*1000;
+
+  printf("\nTotal subjects selected:%d\n",total);
+  printf("Total fees:Rs.%2f",fee);
+  return 0;
+}
